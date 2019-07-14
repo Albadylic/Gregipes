@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400i|Nunito&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Gregipes</title>
   </head>
   <body>
@@ -16,28 +21,36 @@
         dolorem doloremque laborum sunt quod perferendis accusantium neque,
         totam animi incidunt.
       </p>
+      <a href="#recipes">Scroll Down!</a>
     </section>
-    <section class="recipe-cards">
-      <h2>Recipe Title</h2>
-      <ul>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-        <li>Ingredient</li>
-      </ul>
-      <img alt="some alt text" src="#" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto mollitia
-        saepe quo deleniti possimus eos libero blanditiis dolores! Maxime
-        corrupti at voluptas tempore quasi qui necessitatibus voluptatibus
-        voluptatem quis veniam.
-      </p>
+    <section class="page">
+      <section class="recipe-cards" id="recipes">
+        <h2 class="recipe-cards__title">Recipe Title</h2>
+        <ul class="recipe-cards__ingredients">
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+          <li>Ingredient</li>
+        </ul>
+        <img
+          alt="some alt text"
+          src="images/brunch.jpg"
+          class="recipe-cards__image"
+        />
+        <p class="recipe-cards__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          mollitia saepe quo deleniti possimus eos libero blanditiis dolores!
+          Maxime corrupti at voluptas tempore quasi qui necessitatibus
+          voluptatibus voluptatem quis veniam.
+        </p>
+        <a href="recipes.html" id="see-more">See more!</a>
+      </section>
     </section>
   </body>
 </html>
