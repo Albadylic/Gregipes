@@ -1,0 +1,37 @@
+.recipe-cards__title {
+  grid-area: title;
+  text-align: center;
+}
+
+.recipe-cards__ingredients {
+  grid-area: ingredients;
+}
+
+.recipe-cards__image {
+  grid-area: image;
+  object-fit: contain;
+  width: 20vw;
+  justify-self: center;
+}
+
+.recipe-cards__description {
+  grid-area: description;
+}
+
+.recipe-cards {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title title"
+    "ingredients . image image"
+    "ingredients . image image"
+    "description description description description"
+    "description description description description";
+
+  background-color: beige;
+}
+
+.hidden {
+  display: none;
+}
