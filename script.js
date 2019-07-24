@@ -16,18 +16,21 @@ function listAll() {
 function initialise() {
   hideAll();
   recipeCards[recipeDisplay].classList.toggle("hidden");
+  cycleRecipes();
 }
 
-setInterval(function() {
-  if (recipeDisplay < recipeCards.length - 1) {
-    recipeDisplay++;
-    recipeCards[recipeDisplay - 1].classList.toggle("hidden");
-    recipeCards[recipeDisplay].classList.toggle("hidden");
-  } else {
-    recipeDisplay = 0;
-    recipeCards[recipeCards.length - 1].classList.toggle("hidden");
-    recipeCards[recipeDisplay].classList.toggle("hidden");
-  }
-}, 3000);
+function cycleRecipes() {
+  setInterval(function() {
+    if (recipeDisplay < recipeCards.length - 1) {
+      recipeDisplay++;
+      recipeCards[recipeDisplay - 1].classList.toggle("hidden");
+      recipeCards[recipeDisplay].classList.toggle("hidden");
+    } else {
+      recipeDisplay = 0;
+      recipeCards[recipeCards.length - 1].classList.toggle("hidden");
+      recipeCards[recipeDisplay].classList.toggle("hidden");
+    }
+  }, 3000);
+}
 
 initialise();
