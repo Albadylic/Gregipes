@@ -61,6 +61,10 @@ a {
   background-color: beige;
 }
 
+.hidden {
+  display: none;
+}
+
 #see-more {
   position: fixed;
   bottom: 0;
