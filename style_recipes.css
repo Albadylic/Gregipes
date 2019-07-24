@@ -1,0 +1,33 @@
+.recipe-list {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.recipe-tile__title {
+  grid-area: title;
+  text-align: center;
+  margin: 0;
+}
+
+.recipe-tile__image {
+  grid-area: image;
+  object-fit: contain;
+  width: 15vw;
+  justify-self: center;
+  align-self: center;
+}
+
+.recipe-tile__description {
+  grid-area: description;
+}
+
+.recipe-tile {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw;
+  grid-template-rows: 5vh 40vh;
+  grid-template-areas:
+    "title title title title"
+    "image image description description";
+}
