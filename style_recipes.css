@@ -1,3 +1,7 @@
+header {
+  text-align: center;
+}
+
 .recipe-list {
   display: flex;
   justify-content: space-around;
@@ -21,6 +25,8 @@
 
 .recipe-tile__description {
   grid-area: description;
+  text-align: justify;
+  align-self: center;
 }
 
 .recipe-tile {
