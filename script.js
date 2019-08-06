@@ -1,3 +1,4 @@
+// Get Recipe Cards
 let recipeCards = [...document.getElementsByClassName("recipe-cards")];
 let recipeDisplay = 0;
 
@@ -7,17 +8,15 @@ function hideAll() {
   });
 }
 
-function listAll() {
-  recipeCards.forEach(element => {
-    console.log(element.classList);
-  });
-}
+// Function to hide all cards, show the first card and then begin cycling
 
 function initialise() {
   hideAll();
   recipeCards[recipeDisplay].classList.toggle("hidden");
   cycleRecipes();
 }
+
+// Cycle through recipe cards until limit, then return to first card
 
 function cycleRecipes() {
   setInterval(function() {
@@ -33,4 +32,5 @@ function cycleRecipes() {
   }, 3000);
 }
 
+// Auto run
 initialise();
