@@ -12,6 +12,10 @@
   grid-area: ingredients;
 }
 
+td {
+  padding: 0.2vw;
+}
+
 .recipe-page__context {
   grid-area: context;
 }
@@ -26,8 +30,8 @@
   grid-template-rows: auto;
   grid-template-areas:
     "title title title title"
-    "image image . ingredients"
-    "image image . ingredients"
+    "image image ingredients ingredients"
+    "image image ingredients ingredients"
     "context context context context"
     "method method method method"
     "method method method method";
