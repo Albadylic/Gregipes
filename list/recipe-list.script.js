@@ -10,5 +10,5 @@ recipeList.forEach((item, index) => {
 
   recipeList[
     index
-  ].firstElementChild.innerHTML = `<a href=${recipeLink}.html>${recipeTitle}</a>`;
+  ].firstElementChild.innerHTML = `<a href=../pages/${recipeLink}.html>${recipeTitle}</a>`;
 });
