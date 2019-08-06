@@ -1,0 +1,36 @@
+.recipe-page__title {
+  grid-area: title;
+}
+
+.recipe-page__image {
+  grid-area: image;
+  width: 30vw;
+  height: auto;
+}
+
+.recipe-page__ingredients {
+  grid-area: ingredients;
+}
+
+.recipe-page__context {
+  grid-area: context;
+}
+
+.recipe-page__method {
+  grid-area: method;
+}
+
+.recipe-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title title"
+    "image image . ingredients"
+    "image image . ingredients"
+    "context context context context"
+    "method method method method"
+    "method method method method";
+  justify-items: center;
+  align-items: center;
+}
