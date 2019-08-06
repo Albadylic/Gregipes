@@ -1,14 +1,14 @@
 let recipeList = document.querySelectorAll(".recipe-tile");
 
-let recipeTitle = recipeList[0].firstElementChild.innerHTML;
+recipeList.forEach((item, index) => {
+  let recipeTitle = recipeList[index].firstElementChild.innerHTML;
 
-recipeLink = recipeTitle
-  .toLowerCase()
-  .split(" ")
-  .join("_");
+  recipeLink = recipeTitle
+    .toLowerCase()
+    .split(" ")
+    .join("_");
 
-console.log(recipeList[0].firstElementChild);
-
-recipeList[0].firstElementChild.innerHTML = `<a href=${recipeLink}.html>${recipeTitle}</a>`;
-
-console.log(recipeList[0].firstElementChild);
+  recipeList[
+    index
+  ].firstElementChild.innerHTML = `<a href=${recipeLink}.html>${recipeTitle}</a>`;
+});
